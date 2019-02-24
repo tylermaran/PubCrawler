@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- NoUISlider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.1/nouislider.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+    <!-- Google Fonts Link (drop the htttp for production) -->
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo left"><i class="material-icons">local_bar</i><span id="name">Pub </span>HERE</a>
+            <ul class="right">
+                <li><a href="index.html"><i class="material-icons">search</i></a></li>
+                <li><a href="index.html"><i class="material-icons">view_module</i></a></li>
+                <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="card">
+        <div class="row front" id="cardRow">
+            <div class="card">
+                <div class="row ranges">
+                    <div id="barLabel">
+                        <span id="numberBars"></span> Bars. <span id="barMessage"></span>
+                    </div>
+                    <div class="row" id="barRange"></div>
+
+                    <div id="priceLabel">
+                        Average Cost
+                    </div>
+                    <div class="row" id="priceRange"></div>
+                    <div class="dollaBill">
+                        <span id="oneDollar">$</span>
+                        <span id="twoDollar">$$</span>
+                        <span id="threeDollar">$$$</span>
+                    </div>
+
+                    <div id="barLabel">
+                        <span id="numberMiles"></span> miles.
+                    </div>
+                    <div class="row" id="walkRange"></div>
+
+                </div>
+
+                <div class="row" id="searchRow">
+                    <a class="waves-effect waves-light btn-large" id="searchButton"><i class="material-icons right">map</i>Find
+                        Route!</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row back" id="cardRow">Back</div> -->
+
+        <div id="map"></div>
+        <div class="tileRow"></div>
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Google Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- noUISlider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/13.1.1/nouislider.js"></script>
+
+
+    <!-- HERE API -->
+    <!-- <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script> -->
+    <!-- <script src="http://js.api.here.com/v3/3.0/mapsjs-router.js" type="text/javascript" charset="utf-8"></script> -->
+
+    
+    <link rel="stylesheet" type="text/css" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+
+    <!-- Local JS -->
+    <script src="script.js"></script>
+
+    <!-- Google Maps Script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKAcx1c1B2bTd6OpFzYKIB3o45sue1788&callback=initMap">
+    </script>
+
+    <!-- <script>
+        var here = new HereMap("32SZZi8UYe8C7VZcKWXy", "wLWAa2tEmxgDRx02Jykwzw", document.getElementById("map"));
+    </script> -->
+</body>
+
+</html>

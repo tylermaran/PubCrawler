@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8">
+	</script>
+	<script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8">
+	</script>
+	<script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8">
+	</script>
+	<script src="FindRoute.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+</head>
+<body>
+	<div style="width: 640px; height: 480px" id="mapContainer"></div>
+	<script>
+		var cre = {
+				'app_id': 'aMaXLV5XtEEMtxiIxwSN',
+				'app_code': 'ccOGY4NitMBY6XRoHkWpkQ'
+			};
+					
+		var param = [{'name': 'Alchemist Bar Lounge' , 'rating': 4, 'location': {'latitude': 37.7791800203336, 'longitude': -122.392967921689}},
+					 {'name': 'Rooftop 25' , 'rating': 4,'location': {'latitude': 37.77851, 'longitude': -122.39432}}];
+					
+		var r = Routing(param, cre, "mapContainer");
+		
+		
+	</script>
+</body>
+</html>
